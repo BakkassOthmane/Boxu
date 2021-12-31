@@ -15,11 +15,11 @@
     <header>
         <nav class="nav-tabs">
             <ul class="nav-item-group">
-                <li class="nav-item "><a href="#" class="nav-link nav-link-home nav-active">home</a></li>
+                <li class="nav-item "><a href="./index.php" class="nav-link nav-link-home nav-active">home</a></li>
                 <li class="nav-item"><a href="./sub.php" class="nav-link nav-link-subscription">subscription boxes</a>
                 </li>
                 <li class="nav-item"><a href="./order.php" class="nav-link nav-link-preset">themed boxes</a></li>
-                <li class="nav-item"><a href="" class="nav-link nav-link-custom">custom boxes</a></li>
+                <li class="nav-item"><a href="./cst.php" class="nav-link nav-link-custom">custom boxes</a></li>
 
                 <li>
                     <ul class="nav-item-group-icons">
@@ -114,13 +114,13 @@
 
 <section class="pop-up-message">
             <?php
-            if (isset($_GET["userName"])) {
-                $user = $_GET["userName"];
-            }
-            $handler = fopen("./users.txt","w");
-            fwrite($handler,$user);
-            $content = file_get_content("./users.txt");
-            fclose($handler);
+                if (isset($_GET["userName"])) {
+                    $user = $_GET["userName"];
+                }
+                $handler = fopen("./users.txt","w");
+                fwrite($handler,$user);
+                $content = file_get_contents("./users.txt");
+                fclose($handler);
             ?>
     <svg class="pop-up-btn" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 0C7.3875 0 0 7.3875 0 16.5C0 25.6125 7.3875 33 16.5 33C25.6125 33 33 25.6125 33 16.5C33 7.3875 25.6125 0 16.5 0ZM22.0605 13.0605C22.3337 12.7776 22.4849 12.3987 22.4815 12.0054C22.4781 11.6121 22.3203 11.2359 22.0422 10.9578C21.7641 10.6797 21.3879 10.5219 20.9946 10.5185C20.6013 10.5151 20.2224 10.6663 19.9395 10.9395L16.5 14.379L13.0605 10.9395C12.9221 10.7962 12.7566 10.682 12.5736 10.6033C12.3906 10.5247 12.1938 10.4834 11.9946 10.4816C11.7954 10.4799 11.5979 10.5178 11.4136 10.5933C11.2292 10.6687 11.0617 10.7801 10.9209 10.9209C10.7801 11.0617 10.6687 11.2292 10.5933 11.4136C10.5178 11.5979 10.4799 11.7954 10.4816 11.9946C10.4834 12.1938 10.5247 12.3906 10.6033 12.5736C10.682 12.7566 10.7962 12.9221 10.9395 13.0605L14.379 16.5L10.9395 19.9395C10.7962 20.0779 10.682 20.2434 10.6033 20.4264C10.5247 20.6094 10.4834 20.8062 10.4816 21.0054C10.4799 21.2046 10.5178 21.4021 10.5933 21.5864C10.6687 21.7708 10.7801 21.9383 10.9209 22.0791C11.0617 22.2199 11.2292 22.3313 11.4136 22.4067C11.5979 22.4822 11.7954 22.5201 11.9946 22.5184C12.1938 22.5166 12.3906 22.4753 12.5736 22.3967C12.7566 22.318 12.9221 22.2038 13.0605 22.0605L16.5 18.621L19.9395 22.0605C20.2224 22.3337 20.6013 22.4849 20.9946 22.4815C21.3879 22.4781 21.7641 22.3203 22.0422 22.0422C22.3203 21.7641 22.4781 21.3879 22.4815 20.9946C22.4849 20.6013 22.3337 20.2224 22.0605 19.9395L18.621 16.5L22.0605 13.0605Z" fill="white"/>

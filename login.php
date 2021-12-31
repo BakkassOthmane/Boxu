@@ -30,5 +30,7 @@
         <img class="bottom-wave" src="./imgs/waves/login-bottom-wave.svg" alt="" srcset="">
             <h1>Made By Monochrome</h1>
         </section>
+
+        <script src="./js/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+colors:
+orange light #FFB100;
+orange drk: #FF7800
+purple light #451476;
+
+btn - sub = #7C56B1
+
+
+logo 1.5rem  letter - spacing: 5px;
+navlink 1.5em margin fs 2rem
+
+
+fonts:
+font - family: 'Bangers', cursive;
+font - family: 'Carter One', cursive;
+font - family: 'Fredoka One', cursive;
+font - family: 'Rubik', sans - serif;
+
+

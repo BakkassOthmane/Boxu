@@ -175,11 +175,11 @@
                             </h3>
                         </div>
                         <div class="card-text">
-                        <p>
-                            i love mssmn sit amet consectetur adipisicing elit. Consequuntur, ipsa.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, id!
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non. At error cum architecto iste cupiditate, ex beatae odio? Qui accusamus quas labore facere eveniet officia voluptate porro, dolor sed!
-                        </p>    
+                            <p>
+                                i love mssmn sit amet consectetur adipisicing elit. Consequuntur, ipsa.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, id!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non. At error cum architecto iste cupiditate, ex beatae odio? Qui accusamus quas labore facere eveniet officia voluptate porro, dolor sed!
+                            </p>    
                         </div>
                     </div>
                   
@@ -190,11 +190,11 @@
             <div class="reviews-title">
                 <h2>Write A Review !!!</h2>
             </div>
-                <form class="review-form" action="sub.php" method="GET">
+                <form class="review-form" action="./sub.php" method="GET">
                     <div class="form-content">
                         <div class="review-field-1">
                             <label for="review-name" class="review-name-tag">Your Name:</label>
-                            <input type="text" name="reviewName" id="review-name">
+                            <input type="text" class="bla" name="reviewName" id="review-name">
                         </div>
                         <div class="review-field-2">
                             <label for="message-box" class="message-tag">Your Message:</label>
@@ -202,10 +202,11 @@
                             </textarea>
                         </div>
                     </div>
-                    <div>
-                        <button type="submit" class="submit-review">submit</button>
-                    </div>
+
                 </form>
+                <div>
+                        <button Type="submit" class="submit-review">submit</button>
+                    </div>
         </section>
     </main>
     <footer>
