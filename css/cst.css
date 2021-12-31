@@ -13,7 +13,7 @@ html {
 
 body {
     background: #FF7800;
-    background: linear-gradient(0deg, #FF3101 0.6%, #FF7800 58.58%, #FFB100 100%);
+    background: linear-gradient(0deg, #ff4e01 0.6%, #FF7800 58.58%, #FFB100 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
