@@ -11,6 +11,15 @@ html {
     height: 100%;
 }
 
+
+.rankers {
+    font-family: 'Carter One', cursive;
+    margin: 5rem 0;
+    font-size: 2.5rem;
+}
+
+
+
 body {
     background: #006E9D;
     background: linear-gradient(179.97deg, #006E9D 0.03%, #3CD2EF 99.97%);
@@ -121,7 +130,37 @@ header {
     transition: all .2s ease-in;
 }
 
-.search-btn:hover {
+.mini-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reset-btn {
+    height: 3.5rem;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-left: 2px solid white;
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.reset-btn a {
+    font-size: 1.3rem;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2.5px;
+    padding: 3rem;
+}
+
+.reset-btn a:hover {
+    color: #447B8A;
+}
+
+.search-btn:hover, .reset-btn:hover {
     color: #447B8A;
     background-color: #fff;
 
@@ -266,6 +305,12 @@ footer {
 @media screen and (max-width: 768px) {
     .order-hero-title h1 {
         font-size: 2.5rem;
+    }
+
+    .rankers {
+        font-family: 'Carter One', cursive;
+        margin: 5rem 0;
+        font-size: 1.5rem;
     }
 
 }

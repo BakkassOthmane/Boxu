@@ -78,85 +78,291 @@
         </div>
     </section>
     <section class="search-bar-container">
-        <form action="">
-            <input class="search-bar"type="text" placeholder="Search...">
-            <button class="search-btn" type="submit">Submit
-            </button>
+        <form action="order.php" method="Get">
+            <input class="search-bar"type="text" name="search-button" placeholder="Search...">
+            <button class="search-btn" type="submit" >Submit</button>
         </form>
     </section>
     <section class="cards-container">
-            <div class="card">
-                <div class="card-title">
-                        <h2>Marvel Box</h2>
+
+    <?php
+                if (isset($_GET["search-button"])) {
+                    $title = $_GET["search-button"];
+                    $title = strtoupper($title);
+                    switch ($title) {
+                        case 'TRAVEL BOX':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Travel Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 20$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>');
+                            break;
+                        case 'TRAVEL':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Travel Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 20$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>');
+                                break;
+                        case 'MUSIC BOX':
+                               echo('
+                               <div class="card">
+                               <div class="card-title">
+                                       <h2>Music Box</h2>
+                               </div>
+                               <div class="card-img">
+                                   <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                               </div>
+                               <div class="card-info">
+                                   <p>Price: 17.69$</p>
+                                   <button class="product-btn">Add to cart</button>
+                               </div>
+                           </div>');
+                            break;
+                        case 'MUSIC':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Music Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 17.69$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>');
+                        break;
+                        case 'MOVIES BOX':
+                                   echo('
+                                   <div class="card">
+                                   <div class="card-title">
+                                           <h2>Movies Box</h2>
+                                   </div>
+                                   <div class="card-img">
+                                       <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                                   </div>
+                                   <div class="card-info">
+                                       <p>Price: 9.69$</p>
+                                       <button class="product-btn">Add to cart</button>
+                                   </div>
+                               </div>');
+                            break;
+                        case 'MOVIES':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Movies Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 9.69$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>');
+                        break;
+                        case 'MARVEL BOX':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Marvel Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 19.69$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>');
+                            break;
+                        case 'MARVEL':
+                               echo('
+                                    <div class="card">
+                                    <div class="card-title">
+                                            <h2>Marvel Box</h2>
+                                    </div>
+                                    <div class="card-img">
+                                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Price: 19.69$</p>
+                                        <button class="product-btn">Add to cart</button>
+                                    </div>
+                                </div>');
+                        break;
+                        case 'MANGA BOX':
+                                          echo('
+                                          <div class="card">
+                                          <div class="card-title">
+                                                  <h2>Manga Box</h2>
+                                          </div>
+                                          <div class="card-img">
+                                              <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                                          </div>
+                                          <div class="card-info">
+                                              <p>Price: 17$</p>
+                                              <button class="product-btn">Add to cart</button>
+                                          </div>
+                                      </div>
+                                          ');
+                             break;
+                        case 'MANGA':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Manga Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 17$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>
+                            ');
+                            break;
+                        case 'GAMER BOX':
+                               echo('
+                               <div class="card">
+                               <div class="card-title">
+                                       <h2>Gamer Box</h2>
+                               </div>
+                               <div class="card-img">
+                                   <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                               </div>
+                               <div class="card-info">
+                                   <p>Price: 22$</p>
+                                   <button class="product-btn">Add to cart</button>
+                               </div>
+                           </div>');
+                             break;
+                        case 'GAMER':
+                            echo('
+                            <div class="card">
+                            <div class="card-title">
+                                    <h2>Gamer Box</h2>
+                            </div>
+                            <div class="card-img">
+                                <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                            </div>
+                            <div class="card-info">
+                                <p>Price: 22$</p>
+                                <button class="product-btn">Add to cart</button>
+                            </div>
+                        </div>');
+                             break;
+                        default:
+                            echo('
+                            <div class="mini-container">
+                                <h1 class="rankers">WoW look ... So empty</h1>
+                                <form action="order.php" method="Get">
+                                <button class="reset-btn"><a href="./order.php">Reset</a></button>
+                                </form>
+                            </div>
+                            ');
+                            break;
+                    }
+                }else {
+                    echo('
+                    
+                    <div class="card">
+                    <div class="card-title">
+                            <h2>Marvel Box</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                    </div>
+                    <div class="card-info">
+                        <p>Price: 19.69$</p>
+                        <button class="product-btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="card-img">
-                    <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                <div class="card">
+                    <div class="card-title">
+                            <h2>Travel Box</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                    </div>
+                    <div class="card-info">
+                        <p>Price: 20$</p>
+                        <button class="product-btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="card-info">
-                    <p>Price: 19.69$</p>
-                    <button class="product-btn">Add to cart</button>
+                <div class="card">
+                    <div class="card-title">
+                            <h2>Manga Box</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                    </div>
+                    <div class="card-info">
+                        <p>Price: 17$</p>
+                        <button class="product-btn">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                        <h2>Travel Box</h2>
+                <div class="card">
+                    <div class="card-title">
+                            <h2>Movies Box</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                    </div>
+                    <div class="card-info">
+                        <p>Price: 9.69$</p>
+                        <button class="product-btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="card-img">
-                    <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                <div class="card">
+                    <div class="card-title">
+                            <h2>Gamer Box</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                    </div>
+                    <div class="card-info">
+                        <p>Price: 22$</p>
+                        <button class="product-btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="card-info">
-                    <p>Price: 20$</p>
-                    <button class="product-btn">Add to cart</button>
+                <div class="card">
+                    <div class="card-title">
+                            <h2>Music Box</h2>
+                    </div>
+                    <div class="card-img">
+                        <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
+                    </div>
+                    <div class="card-info">
+                        <p>Price: 17.69$</p>
+                        <button class="product-btn">Add to cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                        <h2>Manga Box</h2>
-                </div>
-                <div class="card-img">
-                    <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
-                </div>
-                <div class="card-info">
-                    <p>Price: 17$</p>
-                    <button class="product-btn">Add to cart</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                        <h2>Movies Box</h2>
-                </div>
-                <div class="card-img">
-                    <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
-                </div>
-                <div class="card-info">
-                    <p>Price: 9.69$</p>
-                    <button class="product-btn">Add to cart</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                        <h2>Gamer Box</h2>
-                </div>
-                <div class="card-img">
-                    <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
-                </div>
-                <div class="card-info">
-                    <p>Price: 22$</p>
-                    <button class="product-btn">Add to cart</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                        <h2>Music Box</h2>
-                </div>
-                <div class="card-img">
-                    <img src="./imgs/boxs/product-box.svg" alt="" srcset="">
-                </div>
-                <div class="card-info">
-                    <p>Price: 17.69$</p>
-                    <button class="product-btn">Add to cart</button>
-                </div>
-            </div>
+                    
+                    
+                    ');
+                }
+    ?>
     </section>
     </main>
     <footer>
