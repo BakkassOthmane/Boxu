@@ -116,10 +116,6 @@ header {
     margin: 10rem 0;
 }
 
-/* .check-out-content {
-    width: 60%;
-} */
-
 .check-out-content form {
     display: flex;
     justify-content: center;
@@ -218,11 +214,19 @@ header {
 .card {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     background: linear-gradient(180deg, #851fda 0%, rgba(181, 129, 222, 0) 100%);
     border-radius: 15px;
     margin-bottom: 10rem;
+    width: 100%;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
 }
 
 .card-title, .card-text {
@@ -291,6 +295,24 @@ header {
 
 }
 
+#star_rating {
+    align-self: flex-start;
+    width: 50%;
+    color: white;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 15px;
+    font-family: 'Carter One';
+    letter-spacing: 1.5px;
+}
+
+#star_rating option {
+    color: black;
+}
+
 #message-box {
     width: 100%;
     height: 20rem;
@@ -308,6 +330,7 @@ header {
     font-size: 1.5rem;
     padding: 1rem 3.5rem;
     color: white;
+    cursor: pointer;
 }
 
 .submit-review:hover {
@@ -381,6 +404,11 @@ footer {
 
     #review-name {
         width: 100%;
+    }
+
+    #star_rating {
+        width: 100%;
+        border-radius: 0px;
     }
 
     #review-name, #message-box {
@@ -506,5 +534,7 @@ footer {
         font-size: 1rem;
         width: 15rem;
     }
+
+
 
 }

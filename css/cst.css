@@ -152,6 +152,37 @@ header {
     font-size: 1.3rem;
 }
 
+#order-img {
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+}
+
+#order-img-btn {
+    font-size: 1.3rem;
+    background: none;
+    color: #fff;
+    align-self: flex-start;
+    padding: 0.5rem 2rem;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-bottom: .5rem;
+    font-family: 'Carter One', cursive;
+    cursor: pointer;
+    transition: color .25s ease-in, background-color .25s ease-in;
+}
+
+#order-img-btn:hover {
+    color: #FF7800;
+    background-color: #fff;
+}
+
+.img-container {
+    width: 10rem;
+    align-self: flex-start;
+    margin: 1rem 0;
+}
+
 #order-email {
     width: 40%;
     height: 2.5rem;

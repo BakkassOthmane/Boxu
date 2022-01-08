@@ -169,6 +169,20 @@ li {
     color: #FF3701;
 }
 
+.sign-out-btn {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-family: 'Carter One';
+    color: black;
+    cursor: pointer;
+}
+
+.sign-out-btn:hover {
+    color: #FFB100;
+}
+
 .nav-item-group-icons {
     display: flex;
     justify-content: space-evenly;
